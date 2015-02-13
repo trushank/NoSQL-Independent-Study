@@ -1,0 +1,57 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+
+public class Question {
+	String title;
+	String text;
+User askedby;
+String date;
+long rating;
+String[] tags;
+ArrayList<Answer> answers;
+ArrayList<Comment> comments;
+public Question(Document e){
+	this.title=e.getElementsByClass("question-hyperlink").first().text();
+	this.text=e.getElementsByClass("post-text").first().text();
+	Elements eles=e.getElementsByClass("post-tag");
+	tags=eles.text().split(" ");
+	rating=Long.parseLong(e.getElementsByClass("vote-count-post").first().text());
+	date=e.getElementsByClass("owner").first().getElementsByClass("relativetime").text();
+	askedby=new User(e.getElementsByClass("owner").first());
+	Elements answerElements = e.getElementsByClass("answer");
+	Elements commentElements = e.getElementsByClass("comments").first().getElementsByClass("comment-text");
+answers=new ArrayList<Answer>();
+
+	for (Element content : answerElements) {
+		
+		 answers.add( new Answer(content));
+	
+	}
+	comments=new ArrayList<Comment>();
+	for (Element content : commentElements) {
+		
+		 comments.add( new Comment(content));
+	
+	}
+	
+}
+public String toString(){
+	String ret= "**********************************************************\n"+
+"Title: "+title+"\nQuestion: "+text+"\nRating: "+rating+"\nAsked By: "+askedby+"\nDate: "+date+"\nTags: "+Arrays.toString(tags);
+	for (Answer answer : answers) {
+		ret+="\n"+answer.toString();
+	}
+	for (Comment comment : comments) {
+		ret+="\n"+comment.toString();
+	}
+	return ret;
+}
+public void print(){
+	System.out.println(toString());
+}
+}

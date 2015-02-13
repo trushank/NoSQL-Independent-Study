@@ -1,0 +1,40 @@
+
+
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		ConfigurableApplicationContext context = new ClassPathXmlApplicationContext(
+				"classpath:/spring/applicationContext.xml");
+
+		QuestionTemplate repository = context.getBean(QuestionImpl.class);
+
+		repository.dropCollection();
+		
+		repository.createCollection();
+
+		repository.saveCar(new Car("1", "Jack", "Lamborgini","Gallardo", "Black",100000 ));
+
+		System.out.println("1." + repository.getAllCars());
+		repository.saveCar(new Car("2", "John", "Lamborgini","Aventador", "White",150000 ));
+		
+
+		System.out.println("2. " + repository.getAllCars());
+
+		System.out.println(repository.getCar("1"));
+		
+
+		repository.updateCar("1", "LP560-4");
+
+		System.out.println("3. " + repository.getAllCars());
+
+		repository.deleteCar("2");
+
+		System.out.println("4. " + repository.getAllCars());
+	}
+}

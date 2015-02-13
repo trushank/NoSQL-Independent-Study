@@ -1,0 +1,13 @@
+
+public class Answer {
+
+String AnswerText;
+String AnswerCode;
+User answeredby;
+User editedby;
+AnswerComment comment;
+boolean acceptedAnswer=false;
+int votes=0;
+String date="";
+
+}

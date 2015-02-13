@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/commons-cli-1.2.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/couchdb4j-0.1.2.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/ezmorph-1.0.6.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/fluent-hc-4.3.5.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/httpclient-4.3.5.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/httpclient-cache-4.3.5.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/httpcore-4.3.2.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/httpcore-ab-4.3.2.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/httpcore-nio-4.3.2.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/httpmime-4.3.5.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/org.apache.commons.httpclient.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/org.apache.httpcomponents.httpclient_4.3.5.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/net.sf.json.JSONObject.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/json-lib.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/apache-commons-lang.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/commons-collections-2.1.1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/commons-collections-3.1-src.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/org.apache.commons.collections.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/org.apache.commons.beanutils.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/MySQL/MySQL Connector J/mysql-connector-java-5.1.33-bin.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/mongo-2.8.0.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/spring-asm-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/spring-data-commons-core-1.3.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/spring-data-mongodb-1.1.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/spring-data-mongodb-log4j-1.1.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/spring-jdbc-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/slf4j-api-1.6.6.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/slf4j-ext-1.6.6.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/slf4j-jcl-1.6.6.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/slf4j-jdk14-1.6.6.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/slf4j-log4j12-1.6.6.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/slf4j-migrator-1.6.6.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/slf4j-nop-1.6.6.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/slf4j-simple-1.6.6.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/spring-aop-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/spring-aspects-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/spring-beans-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/spring-context-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/spring-context-support-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/spring-core-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/spring-data-mongodb-cross-store-1.1.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/spring-expression-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/spring-instrument-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/spring-orm-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/spring-oxm-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/spring-test-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/Couch Access/src/spring-tx-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/apache-commons-lang.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/commons-cli-1.2.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/commons-collections-2.1.1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/commons-collections-3.1-src.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/couchdb4j-0.1.2.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/ezmorph-1.0.6.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/fluent-hc-4.3.5.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/httpclient-4.3.5.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/httpclient-cache-4.3.5.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/httpcore-4.3.2.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/httpcore-ab-4.3.2.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/httpcore-nio-4.3.2.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/httpmime-4.3.5.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/json-lib.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/mongo-2.8.0.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/net.sf.json.JSONObject.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/org.apache.commons.beanutils.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/org.apache.commons.collections.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/org.apache.commons.httpclient.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/org.apache.httpcomponents.httpclient_4.3.5.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/slf4j-api-1.6.6.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/slf4j-ext-1.6.6.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/slf4j-jcl-1.6.6.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/slf4j-jdk14-1.6.6.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/slf4j-log4j12-1.6.6.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/slf4j-migrator-1.6.6.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/slf4j-nop-1.6.6.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/slf4j-simple-1.6.6.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/spring-aop-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/spring-asm-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/spring-aspects-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/spring-beans-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/spring-context-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/spring-context-support-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/spring-core-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/spring-data-commons-core-1.3.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/spring-data-mongodb-1.1.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/spring-data-mongodb-cross-store-1.1.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/spring-data-mongodb-log4j-1.1.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/spring-expression-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/spring-instrument-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/spring-jdbc-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/spring-orm-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/spring-oxm-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/spring-test-3.2.0.M1.jar"/>
+	<classpathentry kind="lib" path="E:/Dropbox/Workspace/DB_Performance/bin/spring-tx-3.2.0.M1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

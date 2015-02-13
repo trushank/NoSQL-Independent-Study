@@ -1,0 +1,19 @@
+import org.jsoup.nodes.Element;
+
+
+public class Comment {
+String commenttext="";
+User commenter;
+String date="";
+public Comment(Element e){
+	commenter=new User(e.getElementsByClass("comment-user").first().text());
+	commenttext=e.getElementsByClass("comment-copy").text();
+	date=e.getElementsByClass("relativetime-clean").text();
+}
+public String toString(){
+	return "###### Comment: "+commenttext+"\n###### Commenter: "+commenter+"\n###### Date: "+date+"\n";
+}
+public void print(){
+	System.out.println(toString());
+}
+}

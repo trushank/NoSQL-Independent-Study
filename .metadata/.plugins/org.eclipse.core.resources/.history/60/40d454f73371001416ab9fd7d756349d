@@ -1,0 +1,40 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+
+public class Question {
+	String title;
+	String text;
+User askedby;
+String date;
+long rating;
+String[] tags;
+ArrayList<Answer> answers;
+public Question(Document e){
+	this.title=e.getElementsByClass("question-hyperlink").first().text();
+	this.text=e.getElementsByClass("post-text").first().text();
+	Elements eles=e.getElementsByClass("post-tag");
+	tags=eles.text().split(" ");
+	rating=Long.parseLong(e.getElementsByClass("vote-count-post").first().text());
+	date=e.getElementsByClass("owner").first().getElementsByClass("relativetime").text();
+	askedby=new User(e.getElementsByClass("owner").first());
+	Elements contents = e.getElementsByClass("answer");
+answers=new ArrayList<Answer>();
+	for (Element content : contents) {
+		
+		 answers.add( new Answer(content));
+	
+	}
+}
+public String toString(){
+	return "**********************************************************\n"+
+"Title: "+title+"\nQuestion: "+text+"\nRating: "+rating+"\nAsked By: "+askedby+"\nDate: "+date+"\nTags: "+Arrays.toString(tags);
+}
+public void print(){
+	System.out.println(toString());
+}
+}

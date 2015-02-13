@@ -1,0 +1,69 @@
+import java.util.ArrayList;
+
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+public class Answer {
+
+	String AnswerText;
+	String AnswerCode;
+	User answeredby;
+	User editedby;
+	ArrayList<Comment> comments;
+	boolean acceptedAnswer = false;
+	int votes = 0;
+	String date = "";
+	Element content;
+
+	public Answer() {
+
+	}
+
+	public Answer(Element content) {
+		if (!content.getElementsByClass("vote-accepted-on").isEmpty()) {
+			this.acceptedAnswer = true;
+
+		}
+		if (!content.getElementsByClass("post-signature").last()
+				.getElementsByClass("relativetime").isEmpty())
+			this.date = content.getElementsByClass("post-signature").last()
+					.getElementsByClass("relativetime").last().text();
+		if (!content.getElementsByTag("code").isEmpty())
+			this.AnswerCode = content.getElementsByTag("code").first().html();
+		this.AnswerText = content.getElementsByTag("p").text();
+		this.answeredby = new User(content.getElementsByClass("post-signature")
+				.last());
+		this.votes = Integer.parseInt(content.getElementsByClass(
+				"vote-count-post").text());
+		// this.editedby
+		Elements commentElements = content.getElementsByClass("comments")
+				.first().getElementsByClass("comment-text");
+		comments = new ArrayList<Comment>();
+		for (Element comcontent : commentElements) {
+
+			comments.add(new Comment(comcontent));
+
+		}
+	}
+
+	public String toString() {
+		String ret = "**********************************************************\n"
+				+ "Answer: "
+				+ AnswerText
+				+ "\nCode: "
+				+ AnswerCode
+				+ "\nAccepted: "
+				+ acceptedAnswer
+				+ "\nAnswered By: "
+				+ answeredby + "\nAnswer Votes: " + votes + "\nDate: " + date;
+		for (Comment comment : comments) {
+			ret += "\n" + comment.toString();
+		}
+		return ret;
+	}
+
+	public void print() {
+		System.out.println(toString());
+	}
+
+}

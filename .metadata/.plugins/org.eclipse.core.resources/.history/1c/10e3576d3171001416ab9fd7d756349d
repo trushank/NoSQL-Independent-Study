@@ -1,0 +1,79 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+
+import javax.swing.text.AbstractDocument.Content;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+
+public class Page {
+	//e.getElementsByClass("question-hyperlink").text(); 	//get other questions on page
+	public static void main(String[] args) {
+		Document doc;
+		try {
+			doc = Jsoup
+					.connect(
+							"http://stackoverflow.com/questions/238547/how-do-you-programmatically-download-a-webpage-in-java")
+					.get();
+			Question q=new Question(doc);
+			q.print();
+			// System.out.println("USERS: "+Arrays.toString(getAllUsers(doc)));
+			// System.out.println("Question: "+Arrays.toString(getQuestion(doc)));
+			//getAnswers(doc);
+		} catch (IOException e) {
+
+			e.printStackTrace();
+		}
+
+	}
+
+	
+
+	public static String[] getQuestion(Document doc) {
+		List<String> users = new LinkedList<String>();
+		Elements contents = doc.getElementsByClass("question").first()
+				.getElementsByClass("post-text");
+		for (Element content : contents) {
+			Elements links = content.getElementsByTag("p");
+			for (Element link : links) {
+
+				String linkText = link.text();
+				users.add(linkText);
+			}
+		}
+		return users.toArray(new String[users.size()]);
+	}
+
+	public static Answer[] getAnswers(Document doc) {
+
+		List<String> users = new LinkedList<String>();
+		Elements contents = doc.getElementsByClass("answer");
+
+		for (Element content : contents) {
+			Answer answer = new Answer();
+			if (!content.getElementsByClass("vote-accepted-on").isEmpty()) {
+				answer.acceptedAnswer = true;
+
+			}
+			answer.date = content.getElementsByClass("post-signature").last()
+					.getElementsByClass("relativetime").last().text();
+			answer.AnswerCode = content.getElementsByTag("code").first().html();
+			answer.AnswerText = content.getElementsByTag("p").text();
+			answer.answeredby = new User(content.getElementsByClass(
+					"post-signature").last());
+			System.out.println(answer.answeredby);
+			break;
+			
+		}
+		return null;
+	}
+}

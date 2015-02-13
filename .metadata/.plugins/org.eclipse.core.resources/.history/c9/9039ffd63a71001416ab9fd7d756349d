@@ -1,0 +1,31 @@
+import org.jsoup.nodes.Element;
+
+
+public class User {
+String name;
+String reputation="";
+long gold=0;
+long silver=0;
+long bronze=0;
+String url="";
+public String toString(){
+return "Username: "+name+", Reputation: "+reputation+", Gold: "+gold+", Silver: "+silver+", Bronze: "+bronze+", URL: "+url;
+}
+public User(String user){
+	name=user;
+}
+public User(Element userTag){
+	
+	this.name=userTag.getElementsByTag("a").last().text();
+	this.url=userTag.getElementsByTag("a").last().attr("href");
+	if(userTag.getElementsByClass("badgecount").size()>2)
+	this.bronze=Long.parseLong(userTag.getElementsByClass("badgecount").get(2).text());
+	
+	if(userTag.getElementsByClass("badgecount").size()>1)
+	this.silver=Long.parseLong(userTag.getElementsByClass("badgecount").get(1).text());
+	
+	if(userTag.getElementsByClass("badgecount").size()>0)
+	this.gold=Long.parseLong(userTag.getElementsByClass("badgecount").get(0).text());
+	this.reputation=userTag.getElementsByClass("reputation-score").text();
+}
+}

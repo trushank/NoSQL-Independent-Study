@@ -1,0 +1,36 @@
+import java.io.IOException;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+
+public class Page {
+	//e.getElementsByClass("question-hyperlink").text(); 	//get other questions on page
+	public static void main(String[] args) {
+		Document doc;
+		try {
+			doc = Jsoup
+					.connect(
+							"http://stackoverflow.com/questions/238547/how-do-you-programmatically-download-a-webpage-in-java")
+					.get();
+			Question q=new Question(doc);
+			q.print();
+			
+		} catch (IOException e) {
+
+			e.printStackTrace();
+		}
+
+	}
+
+	
+
+
+	public static Answer[] getAnswers(Document doc) {
+
+		
+	
+			
+		
+		return null;
+	}
+}
